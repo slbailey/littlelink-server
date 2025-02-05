@@ -22,6 +22,7 @@ export const runtimeConfig =
         NAME: window?.env?.NAME,
         BIO: window?.env?.BIO,
         GITHUB: window?.env?.GITHUB,
+        EBAY: window?.env?.EBAY,
         TWITTER: window?.env?.TWITTER,
         INSTAGRAM: window?.env?.INSTAGRAM,
         FACEBOOK: window?.env?.FACEBOOK,

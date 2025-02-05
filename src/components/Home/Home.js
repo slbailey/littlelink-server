@@ -7,6 +7,7 @@ import githubLogo from '../../icons/github.svg';
 import instagramLogo from '../../icons/instagram.svg';
 import kitLogo from '../../icons/kit.svg';
 import tiktokLogo from '../../icons/tiktok.svg';
+import ebayLogo from '../../icons/ebay.svg';
 import twitchLogo from '../../icons/twitch.svg';
 import twitterLogo from '../../icons/twitter.svg';
 import discordLogo from '../../icons/discord.svg';
@@ -183,6 +184,24 @@ function Home(props) {
             <p>{runtimeConfig.BIO}</p>
             <Sort>
               {runtimeConfig.CUSTOM_BUTTON_TEXT && renderCustomButtons()}
+              {runtimeConfig.TIKTOK && (
+                <Button
+                  name="tiktok"
+                  href={runtimeConfig.TIKTOK}
+                  displayName="TikTok"
+                  logo={tiktokLogo}
+                  order={buttonOrder('TIKTOK')}
+                />
+              )}
+              {runtimeConfig.INSTAGRAM && (
+                <Button
+                  name="instagram"
+                  href={runtimeConfig.INSTAGRAM}
+                  displayName="Instagram"
+                  logo={instagramLogo}
+                  order={buttonOrder('INSTAGRAM')}
+                />
+              )}
               {runtimeConfig.YOUTUBE && (
                 <Button
                   name="youtube"
@@ -192,13 +211,13 @@ function Home(props) {
                   order={buttonOrder('YOUTUBE')}
                 />
               )}
-              {runtimeConfig.TWITCH && (
+              {runtimeConfig.LETTERBOXD && (
                 <Button
-                  name="twitch"
-                  href={runtimeConfig.TWITCH}
-                  displayName="Twitch"
-                  logo={twitchLogo}
-                  order={buttonOrder('TWITCH')}
+                  name="letterboxd"
+                  href={runtimeConfig.LETTERBOXD}
+                  displayName="Letterboxd"
+                  logo={letterboxdLogo}
+                  order={buttonOrder('LETTERBOXD')}
                 />
               )}
               {runtimeConfig.TWITTER && (
@@ -210,13 +229,40 @@ function Home(props) {
                   order={buttonOrder('TWITTER')}
                 />
               )}
-              {runtimeConfig.INSTAGRAM && (
+              {runtimeConfig.X && (
                 <Button
-                  name="instagram"
-                  href={runtimeConfig.INSTAGRAM}
-                  displayName="Instagram"
-                  logo={instagramLogo}
-                  order={buttonOrder('INSTAGRAM')}
+                  name="x"
+                  href={runtimeConfig.X}
+                  displayName="X (Formerly Twitter)"
+                  logo={xLogo}
+                  order={buttonOrder('X')}
+                />
+              )}
+              {runtimeConfig.TWITCH && (
+                <Button
+                  name="twitch"
+                  href={runtimeConfig.TWITCH}
+                  displayName="Twitch"
+                  logo={twitchLogo}
+                  order={buttonOrder('TWITCH')}
+                />
+              )}
+              {runtimeConfig.EBAY && (
+                <Button
+                  name="twitch"
+                  href={runtimeConfig.EBAY}
+                  displayName="My eBay Store"
+                  logo={ebayLogo}
+                  order={buttonOrder('EBAY')}
+                />
+              )}
+              {runtimeConfig.AMAZON_WISHLIST && (
+                <Button
+                  name="amazon"
+                  href={runtimeConfig.AMAZON_WISHLIST}
+                  displayName="Amazon Wishlist"
+                  logo={amazonLogo}
+                  order={buttonOrder('AMAZON_WISHLIST')}
                 />
               )}
               {runtimeConfig.GITHUB && (
@@ -238,15 +284,6 @@ function Home(props) {
                 />
               )}
 
-              {runtimeConfig.TIKTOK && (
-                <Button
-                  name="tiktok"
-                  href={runtimeConfig.TIKTOK}
-                  displayName="TikTok"
-                  logo={tiktokLogo}
-                  order={buttonOrder('TIKTOK')}
-                />
-              )}
               {runtimeConfig.FACEBOOK && (
                 <Button
                   name="facebook"
@@ -430,15 +467,6 @@ function Home(props) {
                   displayName="Skoob"
                   logo={skoobLogo}
                   order={buttonOrder('SKOOB')}
-                />
-              )}
-              {runtimeConfig.LETTERBOXD && (
-                <Button
-                  name="letterboxd"
-                  href={runtimeConfig.LETTERBOXD}
-                  displayName="Letterboxd"
-                  logo={letterboxdLogo}
-                  order={buttonOrder('LETTERBOXD')}
                 />
               )}
               {runtimeConfig.MASTODON && (
@@ -721,15 +749,6 @@ function Home(props) {
                   order={buttonOrder('AMAZON_AFFILIATE')}
                 />
               )}
-              {runtimeConfig.AMAZON_WISHLIST && (
-                <Button
-                  name="amazon"
-                  href={runtimeConfig.AMAZON_WISHLIST}
-                  displayName="Amazon Wishlist"
-                  logo={amazonLogo}
-                  order={buttonOrder('AMAZON_WISHLIST')}
-                />
-              )}
               {runtimeConfig.APPLE_MUSIC && (
                 <Button
                   name="applemusic"
@@ -962,15 +981,6 @@ function Home(props) {
                   displayName="VRChat"
                   logo={vrchatLogo}
                   order={buttonOrder('VRCHAT')}
-                />
-              )}
-              {runtimeConfig.X && (
-                <Button
-                  name="x"
-                  href={runtimeConfig.X}
-                  displayName=" "
-                  logo={xLogo}
-                  order={buttonOrder('X')}
                 />
               )}
               {runtimeConfig.CODEWARS && (
