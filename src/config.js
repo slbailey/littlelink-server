@@ -222,6 +222,7 @@ export const runtimeConfig =
         GITHUB: nodeIsProduction
           ? process.env.GITHUB
           : process.env.RAZZLE_GITHUB,
+        EBAY: nodeIsProduction ? process.env.EBAY : process.env.RAZZLE_EBAY,
         TWITTER: nodeIsProduction
           ? process.env.TWITTER
           : process.env.RAZZLE_TWITTER,
