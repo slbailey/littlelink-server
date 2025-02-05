@@ -202,11 +202,20 @@ function Home(props) {
                   order={buttonOrder('INSTAGRAM')}
                 />
               )}
-              {runtimeConfig.YOUTUBE && (
+              {runtimeConfig.YOUTUBE1 && (
                 <Button
-                  name="youtube"
-                  href={runtimeConfig.YOUTUBE}
-                  displayName="YouTube"
+                  name="youtube1"
+                  href={runtimeConfig.YOUTUBE1}
+                  displayName={runtimeConfig.YOUTUBE1_NAME}
+                  logo={youtubeLogo}
+                  order={buttonOrder('YOUTUBE')}
+                />
+              )}
+              {runtimeConfig.YOUTUBE2 && (
+                <Button
+                  name="youtube1"
+                  href={runtimeConfig.YOUTUBE2}
+                  displayName={runtimeConfig.YOUTUBE2_NAME}
                   logo={youtubeLogo}
                   order={buttonOrder('YOUTUBE')}
                 />

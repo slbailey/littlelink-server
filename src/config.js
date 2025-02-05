@@ -230,6 +230,18 @@ export const runtimeConfig =
         YOUTUBE: nodeIsProduction
           ? process.env.YOUTUBE
           : process.env.RAZZLE_YOUTUBE,
+        YOUTUBE1_NAME: nodeIsProduction
+          ? process.env.YOUTUBE1_NAME
+          : process.env.RAZZLE_YOUTUBE1_NAME,
+        YOUTUBE1: nodeIsProduction
+          ? process.env.YOUTUBE1
+          : process.env.RAZZLE_YOUTUBE1,
+        YOUTUBE2_NAME: nodeIsProduction
+          ? process.env.YOUTUBE2_NAME
+          : process.env.RAZZLE_YOUTUBE2_NAME,
+        YOUTUBE2: nodeIsProduction
+          ? process.env.YOUTUBE2
+          : process.env.RAZZLE_YOUTUBE2,
         TWITCH: nodeIsProduction
           ? process.env.TWITCH
           : process.env.RAZZLE_TWITCH,
