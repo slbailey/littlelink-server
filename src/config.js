@@ -139,6 +139,7 @@ export const runtimeConfig =
         DROP_SHADOW: window?.env?.DROP_SHADOW,
         FIVEHUNDREDPX: window?.env?.FIVEHUNDREDPX,
         JETPHOTOS: window?.env?.JETPHOTOS,
+        SUPERPATCH: window?.env?.SUPERPATCH,
         THEME_OS: window?.env?.THEME_OS,
         SUBSTACK: window?.env?.SUBSTACK,
         PRINTABLES: window?.env?.PRINTABLES,
@@ -250,6 +251,9 @@ export const runtimeConfig =
         TWITCH: nodeIsProduction
           ? process.env.TWITCH
           : process.env.RAZZLE_TWITCH,
+        SUPERPATCH: nodeIsProduction
+          ? process.env.SUPERPATCH
+          : process.env.RAZZLE_SUPERPATCH,
         TIKTOK: nodeIsProduction
           ? process.env.TIKTOK
           : process.env.RAZZLE_TIKTOK,

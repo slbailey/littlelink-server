@@ -236,6 +236,11 @@ button {
   background-color: #000000;
 }
 
+/* Superpatch */
+.button.button-superpatch {
+  color: #000000;
+  background-color: #ffffff;
+}
 
 /* Mastodon */
 .button.button-mastodon {

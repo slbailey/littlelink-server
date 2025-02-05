@@ -20,6 +20,7 @@ import snapchatLogo from '../../icons/snapchat.svg';
 import spotifyLogo from '../../icons/spotify.svg';
 import redditLogo from '../../icons/reddit.svg';
 import mediumLogo from '../../icons/medium.svg';
+import superpatchLogo from '../../icons/superpatch.svg';
 import pinterestLogo from '../../icons/pinterest.svg';
 import soundcloudLogo from '../../icons/soundcloud.svg';
 import figmaLogo from '../../icons/figma.svg';
@@ -272,6 +273,15 @@ function Home(props) {
                   displayName="Amazon Wishlist"
                   logo={amazonLogo}
                   order={buttonOrder('AMAZON_WISHLIST')}
+                />
+              )}
+              {runtimeConfig.SUPERPATCH && (
+                <Button
+                  name="superpatch"
+                  href={runtimeConfig.SUPERPATCH}
+                  displayName="Superpatch Store"
+                  logo={superpatchLogo}
+                  order={buttonOrder('SUPERPATCH')}
                 />
               )}
               {runtimeConfig.GITHUB && (
