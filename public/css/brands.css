@@ -230,6 +230,12 @@ button {
   background-color: #1da1f2;
 }
 
+/* eBay */
+.button.button-ebay {
+  color: #ffffff;
+  background-color: #000000;
+}
+
 
 /* Mastodon */
 .button.button-mastodon {
@@ -245,6 +251,14 @@ button {
 
 /* YouTube */
 .button.button-youtube {
+  color: #ffffff;
+  background-color: #000000;
+}
+.button.button-youtube1 {
+  color: #ffffff;
+  background-color: #000000;
+}
+.button.button-youtube2 {
   color: #ffffff;
   background-color: #000000;
 }

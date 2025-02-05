@@ -258,7 +258,7 @@ function Home(props) {
               )}
               {runtimeConfig.EBAY && (
                 <Button
-                  name="twitch"
+                  name="ebay"
                   href={runtimeConfig.EBAY}
                   displayName="My eBay Store"
                   logo={ebayLogo}
